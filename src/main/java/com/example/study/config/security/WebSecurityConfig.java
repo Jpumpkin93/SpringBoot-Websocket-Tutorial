@@ -1,4 +1,4 @@
-package com.example.study.config;
+package com.example.study.config.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -43,4 +43,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .password("{noop}1234")
                 .roles("GUEST");
     }
+
+
 }
